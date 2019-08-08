@@ -29,7 +29,7 @@ List testArray = new ArrayList<Map<String,String>>();
 	try{
 			
          stage('Checkout') {
-             git url: 'https://github.com/dhananjayakTpm/AtoBeMailTest.git', credentialsId: 'master', branch: 'master'
+             git url: 'https://github.com/dhananjayakTpm/TemplateLinux.git', credentialsId: 'master', branch: 'master'
         }
 
 		stage('Build') {
