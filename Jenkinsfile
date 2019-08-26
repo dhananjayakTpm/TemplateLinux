@@ -275,6 +275,9 @@ sb.append '<TABLE width="100%" style="border-collapse: collapse;">'
  sb.append '<TR>'
   sb.append '<TD style="border: 1px solid black;" colspan="1" > &nbsp;&nbsp; <B style="font-size: 115%;">Test case name</B> </TD>'
  sb.append '<TD style="border: 1px solid black;" colspan="1" >&nbsp;&nbsp;  <B style="font-size: 115%;"> Result </B> </TD>'
+	
+ sb.append '<TD style="border: 1px solid black;" colspan="1" >&nbsp;&nbsp;  <B style="font-size: 115%;"> Bug Id </B> </TD>'	
+	
    sb.append '</TR>'
    
    //for each loop starts
@@ -285,6 +288,7 @@ sb.append '<TABLE width="100%" style="border-collapse: collapse;">'
 		 sb.append  '<B>'+ item.name +'</B>'
 		 sb.append	'</TD><TD style="border: 1px solid black;" colspan="1" class="test_passed" >&nbsp;&nbsp;'		
 		sb.append('<a href="'+item.url+'"'+' style="color:green"><b>PASS</b></a>');
+		 sb.append	'</TD><TD style="border: 1px solid black;" colspan="1" class="test_passed" >&nbsp;&nbsp;'	
 		 sb.append	'</TD></TR>'
 	}  
 		if(item.flag == "2"){
@@ -292,6 +296,7 @@ sb.append '<TABLE width="100%" style="border-collapse: collapse;">'
 		 sb.append  '<B>'+ item.name +'</B>'
 		 sb.append	'</TD><TD style="border: 1px solid black;" colspan="1" class="test_failed" >&nbsp;&nbsp;'		
 		sb.append('<a href="'+item.url+'"'+' style="color:red"><b>FAIL</b></a>');
+		 sb.append	'</TD><TD style="border: 1px solid black;" colspan="1" class="test_failed" >&nbsp;&nbsp;'
 		 sb.append	'</TD></TR>'
 	}  
 	
