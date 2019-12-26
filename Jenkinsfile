@@ -206,7 +206,7 @@ Document doc = Jsoup.parse(file1, "UTF-8");
 	compressLog : true,  
 	body:content,		
         subject: subject,        
-        to: 'reshmi.g@thinkpalm.com,nasia.t@thinkpalm.com,sandeep.v@thinkpalm.com'
+        to: 'dhananjaya.k@thinkpalm.com'
 		 }
     }
 
